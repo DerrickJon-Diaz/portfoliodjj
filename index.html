@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Derrick Jon Diaz | Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ── NAVBAR ── -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a class="nav-logo" href="#hero">DJD<span class="dot">.</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ── HERO ── -->
+  <section id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <p class="hero-greeting">Hello, I'm</p>
+      <h1 class="hero-name">Derrick Jon <span class="accent">Diaz</span></h1>
+      <div class="hero-typewriter">
+        <span id="typewriter-text"></span><span class="cursor">|</span>
+      </div>
+      <p class="hero-sub">4th Year Bachelor of Science in Information Technology</p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-outline">Get in Touch</a>
+      </div>
+      <div class="hero-socials">
+        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+        <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="avatar-ring">
+        <div class="avatar-inner">
+          <span class="avatar-initials">DJD</span>
+        </div>
+      </div>
+      <div class="floating-badge badge-1"><i class="fab fa-html5"></i> HTML5</div>
+      <div class="floating-badge badge-2"><i class="fab fa-css3-alt"></i> CSS3</div>
+      <div class="floating-badge badge-3"><i class="fab fa-js"></i> JavaScript</div>
+      <div class="floating-badge badge-4"><i class="fab fa-php"></i> PHP</div>
+    </div>
+    <a href="#about" class="scroll-down" aria-label="Scroll down">
+      <i class="fas fa-chevron-down"></i>
+    </a>
+  </section>
+
+  <!-- ── ABOUT ── -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title">About <span class="accent">Me</span></h2>
+      <div class="about-grid">
+        <div class="about-text" data-aos>
+          <p>
+            Hi! I'm <strong>Derrick Jon Diaz</strong>, a passionate and driven 4th year BSIT student with a strong foundation in software development, system design, and web technologies. I thrive on building solutions that are both functional and user-friendly.
+          </p>
+          <p>
+            Throughout my academic journey, I've developed skills across the full stack — from crafting responsive front-end interfaces to designing robust back-end systems. I enjoy turning complex problems into elegant, scalable solutions.
+          </p>
+          <p>
+            When I'm not coding, I'm exploring new technologies, contributing to projects, or leveling up my skills to stay ahead in the ever-evolving world of IT.
+          </p>
+          <div class="about-info">
+            <div class="info-item"><i class="fas fa-user"></i><span><strong>Name:</strong> Derrick Jon Diaz</span></div>
+            <div class="info-item"><i class="fas fa-graduation-cap"></i><span><strong>Degree:</strong> BS Information Technology</span></div>
+            <div class="info-item"><i class="fas fa-calendar"></i><span><strong>Year Level:</strong> 4th Year</span></div>
+            <div class="info-item"><i class="fas fa-map-marker-alt"></i><span><strong>Location:</strong> Philippines</span></div>
+          </div>
+          <a href="#" class="btn btn-primary" download>
+            <i class="fas fa-download"></i> Download CV
+          </a>
+        </div>
+        <div class="about-stats" data-aos>
+          <div class="stat-card">
+            <span class="stat-number" data-target="4">0</span>
+            <span class="stat-label">Years of Study</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number" data-target="15">0</span>
+            <span class="stat-label">Projects Completed</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number" data-target="10">0</span>
+            <span class="stat-label">Technologies Used</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number" data-target="100">0</span>
+            <span class="stat-label">% Commitment</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SKILLS ── -->
+  <section id="skills" class="section section-dark">
+    <div class="container">
+      <h2 class="section-title">My <span class="accent">Skills</span></h2>
+      <p class="section-subtitle">Technologies and tools I work with</p>
+      <div class="skills-tabs">
+        <button class="tab-btn active" data-tab="frontend">Frontend</button>
+        <button class="tab-btn" data-tab="backend">Backend</button>
+        <button class="tab-btn" data-tab="tools">Tools &amp; Others</button>
+      </div>
+
+      <div class="tab-content active" id="tab-frontend">
+        <div class="skills-grid">
+          <div class="skill-card" data-aos>
+            <div class="skill-icon html"><i class="fab fa-html5"></i></div>
+            <h4>HTML5</h4>
+            <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+            <span class="skill-percent">90%</span>
+          </div>
+          <div class="skill-card" data-aos>
+            <div class="skill-icon css"><i class="fab fa-css3-alt"></i></div>
+            <h4>CSS3</h4>
+            <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+            <span class="skill-percent">85%</span>
+          </div>
+          <div class="skill-card" data-aos>
+            <div class="skill-icon js"><i class="fab fa-js"></i></div>
+            <h4>JavaScript</h4>
+            <div class="skill-bar"><div class="skill-fill" data-width="78"></div></div>
+            <span class="skill-percent">78%</span>
+          </div>
+          <div class="skill-card" data-aos>
+            <div class="skill-icon react"><i class="fab fa-react"></i></div>
+            <h4>React</h4>
+            <div class="skill-bar"><div class="skill-fill" data-width="65"></div></div>
+            <span class="skill-percent">65%</span>
+          </div>
+          <div class="skill-card" data-aos>
+            <div class="skill-icon bootstrap"><i class="fab fa-bootstrap"></i></div>
+            <h4>Bootstrap</h4>
+            <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+            <span class="skill-percent">80%</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-content" id="tab-backend">
+        <div class="skills-grid">
+          <div class="skill-card" data-aos>
+            <div class="skill-icon php"><i class="fab fa-php"></i></div>
+            <h4>PHP</h4>
+            <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+            <span class="skill-percent">75%</span>
+          </div>
+          <div class="skill-card" data-aos>
+            <div class="skill-icon node"><i class="fab fa-node-js"></i></div>
+            <h4>Node.js</h4>
+            <div class="skill-bar"><div class="skill-fill" data-width="60"></div></div>
+            <span class="skill-percent">60%</span>
+          </div>
+          <div class="skill-card" data-aos>
+            <div class="skill-icon python"><i class="fab fa-python"></i></div>
+            <h4>Python</h4>
+            <div class="skill-bar"><div class="skill-fill" data-width="65"></div></div>
+            <span class="skill-percent">65%</span>
+          </div>
+          <div class="skill-card" data-aos>
+            <div class="skill-icon db"><i class="fas fa-database"></i></div>
+            <h4>MySQL</h4>
+            <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+            <span class="skill-percent">80%</span>
+          </div>
+          <div class="skill-card" data-aos>
+            <div class="skill-icon java"><i class="fab fa-java"></i></div>
+            <h4>Java</h4>
+            <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+            <span class="skill-percent">70%</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-content" id="tab-tools">
+        <div class="skills-grid">
+          <div class="skill-card" data-aos>
+            <div class="skill-icon git"><i class="fab fa-git-alt"></i></div>
+            <h4>Git</h4>
+            <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+            <span class="skill-percent">80%</span>
+          </div>
+          <div class="skill-card" data-aos>
+            <div class="skill-icon github-sk"><i class="fab fa-github"></i></div>
+            <h4>GitHub</h4>
+            <div class="skill-bar"><div class="skill-fill" data-width="78"></div></div>
+            <span class="skill-percent">78%</span>
+          </div>
+          <div class="skill-card" data-aos>
+            <div class="skill-icon figma"><i class="fab fa-figma"></i></div>
+            <h4>Figma</h4>
+            <div class="skill-bar"><div class="skill-fill" data-width="65"></div></div>
+            <span class="skill-percent">65%</span>
+          </div>
+          <div class="skill-card" data-aos>
+            <div class="skill-icon linux"><i class="fab fa-linux"></i></div>
+            <h4>Linux</h4>
+            <div class="skill-bar"><div class="skill-fill" data-width="60"></div></div>
+            <span class="skill-percent">60%</span>
+          </div>
+          <div class="skill-card" data-aos>
+            <div class="skill-icon network"><i class="fas fa-network-wired"></i></div>
+            <h4>Networking</h4>
+            <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+            <span class="skill-percent">70%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PROJECTS ── -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="section-title">My <span class="accent">Projects</span></h2>
+      <p class="section-subtitle">A showcase of what I've built</p>
+      <div class="projects-filter">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+        <button class="filter-btn" data-filter="system">System</button>
+        <button class="filter-btn" data-filter="mobile">Mobile</button>
+      </div>
+      <div class="projects-grid" id="projectsGrid">
+
+        <div class="project-card" data-aos data-category="web">
+          <div class="project-image">
+            <div class="project-placeholder web-ph">
+              <i class="fas fa-store"></i>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="proj-btn"><i class="fas fa-eye"></i> Live</a>
+              <a href="#" class="proj-btn"><i class="fab fa-github"></i> Code</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>E-Commerce Website</h3>
+            <p>A fully responsive online store with product listings, cart functionality, and checkout process built with HTML, CSS, JavaScript, and PHP.</p>
+            <div class="project-tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span><span>PHP</span><span>MySQL</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-aos data-category="system">
+          <div class="project-image">
+            <div class="project-placeholder system-ph">
+              <i class="fas fa-school"></i>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="proj-btn"><i class="fas fa-eye"></i> Live</a>
+              <a href="#" class="proj-btn"><i class="fab fa-github"></i> Code</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Student Information System</h3>
+            <p>A web-based system for managing student records, enrollment, grades, and reports with role-based access control.</p>
+            <div class="project-tags">
+              <span>PHP</span><span>MySQL</span><span>Bootstrap</span><span>JavaScript</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-aos data-category="web">
+          <div class="project-image">
+            <div class="project-placeholder task-ph">
+              <i class="fas fa-tasks"></i>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="proj-btn"><i class="fas fa-eye"></i> Live</a>
+              <a href="#" class="proj-btn"><i class="fab fa-github"></i> Code</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Task Management App</h3>
+            <p>A drag-and-drop task manager with priority tagging, deadlines, and local storage persistence built with vanilla JavaScript.</p>
+            <div class="project-tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-aos data-category="system">
+          <div class="project-image">
+            <div class="project-placeholder inventory-ph">
+              <i class="fas fa-boxes-stacked"></i>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="proj-btn"><i class="fas fa-eye"></i> Live</a>
+              <a href="#" class="proj-btn"><i class="fab fa-github"></i> Code</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Inventory Management System</h3>
+            <p>Desktop-based inventory system with CRUD operations, stock tracking, and automated low-stock alerts built using Java.</p>
+            <div class="project-tags">
+              <span>Java</span><span>MySQL</span><span>JDBC</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-aos data-category="mobile">
+          <div class="project-image">
+            <div class="project-placeholder mobile-ph">
+              <i class="fas fa-mobile-screen-button"></i>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="proj-btn"><i class="fas fa-eye"></i> Live</a>
+              <a href="#" class="proj-btn"><i class="fab fa-github"></i> Code</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Budget Tracker App</h3>
+            <p>Mobile-friendly expense tracker with income/expense logging, category charts, and monthly summaries.</p>
+            <div class="project-tags">
+              <span>React</span><span>Node.js</span><span>MongoDB</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-aos data-category="web">
+          <div class="project-image">
+            <div class="project-placeholder weather-ph">
+              <i class="fas fa-cloud-sun"></i>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="proj-btn"><i class="fas fa-eye"></i> Live</a>
+              <a href="#" class="proj-btn"><i class="fab fa-github"></i> Code</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Weather Dashboard</h3>
+            <p>Real-time weather app using OpenWeatherMap API with 5-day forecast, weather icons, and location search.</p>
+            <div class="project-tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span><span>API</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── EDUCATION ── -->
+  <section id="education" class="section section-dark">
+    <div class="container">
+      <h2 class="section-title">My <span class="accent">Education</span></h2>
+      <p class="section-subtitle">Academic background and certifications</p>
+      <div class="timeline">
+
+        <div class="timeline-item" data-aos>
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-period">2022 – Present</span>
+            <h3>Bachelor of Science in Information Technology</h3>
+            <h4><i class="fas fa-university"></i> Your University Name</h4>
+            <p>Currently in 4th year, specializing in web development and system development. Active member of the IT student organization.</p>
+            <div class="timeline-tags"><span>4th Year</span><span>BSIT</span><span>Dean's List</span></div>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-aos>
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-period">2018 – 2022</span>
+            <h3>Senior High School – STEM Track</h3>
+            <h4><i class="fas fa-school"></i> Your Senior High School</h4>
+            <p>Completed Senior High School under the Science, Technology, Engineering, and Mathematics strand. Graduated with honors.</p>
+            <div class="timeline-tags"><span>STEM</span><span>With Honors</span></div>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-aos>
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-period">Certifications</span>
+            <h3>Online Certifications</h3>
+            <h4><i class="fas fa-certificate"></i> Various Platforms</h4>
+            <ul class="cert-list">
+              <li><i class="fas fa-check-circle"></i> Responsive Web Design – freeCodeCamp</li>
+              <li><i class="fas fa-check-circle"></i> JavaScript Algorithms & Data Structures – freeCodeCamp</li>
+              <li><i class="fas fa-check-circle"></i> Python for Everybody – Coursera</li>
+              <li><i class="fas fa-check-circle"></i> Introduction to Cybersecurity – Cisco NetAcad</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ── -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2 class="section-title">Get in <span class="accent">Touch</span></h2>
+      <p class="section-subtitle">Have a project in mind or just want to say hi? Feel free to reach out!</p>
+      <div class="contact-grid">
+
+        <div class="contact-info" data-aos>
+          <div class="contact-card">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <h4>Email</h4>
+            <p>derrickjondiaz@email.com</p>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon"><i class="fas fa-phone"></i></div>
+            <h4>Phone</h4>
+            <p>+63 XXX XXX XXXX</p>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <h4>Location</h4>
+            <p>Philippines</p>
+          </div>
+          <div class="social-links">
+            <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contactForm" data-aos>
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="John Doe" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" placeholder="john@example.com" required />
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Project Inquiry" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+          <div class="form-status" id="formStatus"></div>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-content">
+        <p class="footer-logo">DJD<span class="dot">.</span></p>
+        <p class="footer-copy">&copy; <span id="year"></span> Derrick Jon Diaz. All rights reserved.</p>
+        <p class="footer-sub">Built with <i class="fas fa-heart" style="color:#f43f5e"></i> using HTML, CSS &amp; JavaScript</p>
+      </div>
+    </div>
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
